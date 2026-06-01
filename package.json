@@ -1,0 +1,42 @@
+{
+  "name": "commit-craft",
+  "version": "1.0.0",
+  "description": "Generate conventional commit messages from your staged diff — learns your repo's style",
+  "author": "katogatogato",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/katogatogato/commit-craft"
+  },
+  "keywords": [
+    "git",
+    "commit",
+    "conventional-commits",
+    "cli",
+    "hook"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "commit-craft": "./bin/commit-craft"
+  },
+  "files": [
+    "dist/",
+    "bin/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}
