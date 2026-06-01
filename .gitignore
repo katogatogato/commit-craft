@@ -2,3 +2,5 @@ node_modules/
 dist/
 .commit-craft.json
 *.tsbuildinfo
+.env
+.env.local
